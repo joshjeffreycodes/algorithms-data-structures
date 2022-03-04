@@ -1,10 +1,7 @@
-from pydatalists import numbers_unique_sorted
+from pydatalists import numbers_unique_sorted, numbers_unique_unsorted
 
 # -----------------------------------------
 # Arrays - Common list operations
-
-# reverse
-# sort
 # -----------------------------------------
 
 def is_empty(list):
@@ -117,17 +114,17 @@ def index_remove(list,index):
       print('Index not removed : %s : %s' % (index,e))
       return False
 
-def iter_sorted(iter):
+def iter_sort(iter):
   ''' Uses `sorted(iterable)` to sort any iterable.
   * Returns a new sorted list or `False`.
   * See https://docs.python.org/3/howto/sorting.html
   '''
   try:
     new = sorted(iter)
-    print('List sort complete.')
+    print('Iter sort complete.')
     return new
   except Exception as e:
-    print('List not sorted : %s' % e)
+    print('Iter not sorted : %s' % e)
     return False
 
 def list_sort(list):
@@ -144,17 +141,17 @@ def list_sort(list):
     print('List not sorted : %s' % e)
     return False
 
-def iter_reversed(iter):
+def iter_reverse(iter):
   ''' Uses `reversed(iterable)` to reverse the order of an iterable.
   * Returns new reversed list or `False`.
   * See https://docs.python.org/3/library/functions.html?highlight=reverse#reversed
   '''
   try:
-    new = reversed(iter)
-    print('List reversed')
+    new = list(reversed(iter))
+    print('Iter reversed')
     return new
   except Exception as e:
-    print('List not reversed : %s' % e)
+    print('Iter not reversed : %s' % e)
     return False
 
 def list_reverse(list):
@@ -165,7 +162,7 @@ def list_reverse(list):
   '''
   try:
     list.reverse()
-    print('List reverse complete.')
+    print('List reversed.')
     return True
   except Exception as e:
     print('List not reversed : %s' % e)
@@ -182,6 +179,12 @@ def list_clear(list):
   except Exception as e:
     print('List not cleared : %s' % e)
     return False
+
+
+
+# -------------------------------
+# Test `list_clear`
+# -------------------------------
 
 
 # -------------------------------
@@ -327,4 +330,36 @@ def list_clear(list):
 # index_remove(list_nums, 47)
 # print(list_nums)
 
+# -------------------------------
+# Test `iter_sort`
+# -------------------------------
+# sorted_iter = iter_sort(numbers_unique_unsorted)
+# print(sorted_iter)
 
+# hello = 'Hello, World!'
+# iter_sort(hello)
+# print(hello)
+
+# -------------------------------
+# Test `list_sort`
+# -------------------------------
+# unsorted = numbers_unique_unsorted
+# list_sort(unsorted)
+# print(unsorted)
+
+# hello = 'Hello, World!'
+# list_sort(hello)
+# print(hello)
+
+# -------------------------------
+# Test `iter_reverse`
+# -------------------------------
+iter_reversed = iter_reverse(numbers_unique_sorted)
+print(iter_reversed)
+
+# -------------------------------
+# Test `list_reverse`
+# -------------------------------
+soorted_list = numbers_unique_sorted
+list_reverse(soorted_list)
+print(soorted_list)

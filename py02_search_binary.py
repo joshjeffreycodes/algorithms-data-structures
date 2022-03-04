@@ -29,13 +29,14 @@ class BinarySearch():
 
   def do(self): 
 
+    # Bail early if list is empty.
     if len(self.list) == 0:
       self.operations += 1
       print('List is empty : %s operations' % self.operations)
       return False
 
     while self.first <= self.last:
-      # Floor division rounds down
+      # Floor division rounds down.
       midpoint = (self.first + self.last)//2 
 
       # Best case, target is found on first try.
@@ -49,11 +50,12 @@ class BinarySearch():
         self.operations += 1
         self.first = (midpoint + 1)
 
-      # Target is smaller, so discard the bigger half. 
+      # Target is smaller, so discard bigger half. 
       else:
         self.operations += 1
         self.last = (midpoint - 1)
 
+    # If we reach this point, target was not found.
     print('Target not found : %s : %s operations' % (self.target, self.operations))
     return None
 

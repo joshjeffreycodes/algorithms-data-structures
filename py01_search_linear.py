@@ -7,14 +7,14 @@ from pydatalists import alpha_unique_sorted
 # The worst-case requires iterating over the entire list. 
 #
 # O(1) - Constant Space 
-# 
+# The worst case uses a single list.
 # -----------------------------------------
 
 class LinearSearch:
   '''Uses linear runtime to search a list for a target.  
-  If target is found, returns target's index.  
-  If target is not found, returns `None`.  
-  If list is empty, returns `False`.
+  * Returns target's `index` if found. 
+  * Returns `None` if target is not found. 
+  * Returns `False` if passed an empty list.
   '''  
   def __init__(self, list, target):
 
@@ -42,7 +42,7 @@ class LinearSearch:
 
 
 # -----------------------------------------
-# Test
+# Usage
 # -----------------------------------------
 list_alpha = alpha_unique_sorted
 list_empty = []
