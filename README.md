@@ -56,7 +56,7 @@ Based on [freeCodeCamp.org: Algorithms and Data Structures](https://youtu.be/8hl
 
 ### [Topic 8: Arrays](topic-08_arrays.md)
 
-* `py-04_arrays.py`
+* `py04_arrays.py`
 * Key Python Points
 * Homogenous and Heterogenous Arrays
 * Contiguous and Non-Contiguous Structures
@@ -65,18 +65,10 @@ Based on [freeCodeCamp.org: Algorithms and Data Structures](https://youtu.be/8hl
 * More About Contiguous Memory
 * Amortized Memory
 
-### [Topic 9: ]()
+### [Topic 9: Linked Lists](topic-09_linked-lists.md)
 
-* 
-* 
-* 
-
-### [Topic 10: ]()
-
-* 
-* 
-* 
-
-
-
+* `py05_linked-lists.py`
+* Self referential nodes
+* Single and doubly linked lists
+* Head and tail nodes
 
