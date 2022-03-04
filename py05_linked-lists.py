@@ -176,13 +176,13 @@ class LinkedList:
     '''Removes node with the given index
     from the linked list.
     '''
+    # TODO
 
   def read_index(self,index):
     '''Reads and returns the value at 
     a given index
     '''
-
-  
+    # TODO
 
 # -------------------------------
 # Use

@@ -27,12 +27,11 @@ All data structures are expected to carry out 4 operations:
 * Insert values at any point into the structure
 * Delete values from the structure. 
 
-All programing languages provide data structures, so why do we need additional structures, why would we create our own? 
-
-This section explores data structures and space complexity by looking at arrays and linked lists in Python. 
-
 ## Why build data structures?
 
-...instead of using ones built in to the programing language? The short answer is, because each structure solves a particular problem. For example, arrays are good at accessing values (constant time), but less efficient with search, add, and delete (linear time). Linked lists are somewhat better at these things, but with caveats. 
+All programing languages provide data structures, so why do we need additional structures, why would we create our own? 
 
+The short answer is, because each structure solves a particular problem. For example, arrays are good at accessing values (constant time), but less efficient with search, add, and delete (linear time). Linked lists are somewhat better at these things, but with caveats. 
+
+This section explores data structures and space complexity by looking at **arrays** and **linked lists** in Python. 
 
